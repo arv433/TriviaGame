@@ -1,0 +1,163 @@
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    background: #007a63;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#gameLogo {
+    width: 400px;
+    display: block;
+    margin: 20px auto;
+}
+
+button {
+    display: block;
+    margin: 50px auto;
+    background-color: #8c8c8c;
+    font-family: "Copperplate Gothic Bold";
+    font-size: 60px;
+    color: #003182;
+    transition: background-color 0.5s ease;
+    transition: color 0.5 ease;
+}
+button:hover {
+    background-color: #003182;
+    color: #8c8c8c;
+}
+button:focus {
+    outline: none;
+}
+
+#restartButton {
+    float: right;
+    margin: 40px;
+}
+
+#instructions {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#questionGameContainer {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#questionFieldContainer {
+    position: fixed;
+    display: flex;
+    margin: 0 auto;
+    height: 125px;
+    width: 100%;
+    justify-content: center;
+    z-index: -1000;
+}
+
+#questionField {
+    position: absolute;
+    width: 1000px;
+    height: 100px;
+    bottom: 0;
+    background-image: url("../images/answerField.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timerDisplay {
+    display: block;
+    float: right;
+    margin: 40vh 125px;
+    font-size: 60px;
+    color: #ffd800;
+    background-color: #01469b;
+    border-radius: 200px;
+    border: 4px solid #ffd800;
+    padding: 30px;
+}
+
+#moneySidebar {
+    display: flex;
+    flex-direction: column-reverse;
+    float: left;
+    margin: 150px 40px;
+    font-size: 20px;
+    line-height: 1.5;
+    justify-content: center;
+    z-index: 5000;
+}
+
+#answersSection {
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    text-align: center;
+    z-index: 6000;
+}
+
+.answerField {
+    background-image: url("../images/answerField.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 54px;
+    width: 450px;
+    line-height: 50px;
+    display: inline-block;
+    margin: 20px;
+}
+
+#resultContainer {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+#resultStatement {
+    font-family: 'Ewert', cursive;
+    font-size: 100px;
+    display: inline-block;
+    margin: 50px 0 50px 0;
+}
+
+.stand {
+    background: url("../images/millionaireLogo.png") no-repeat center center;
+    background-size: 200px 200px;
+    background-color: #d69513;
+    display: block;
+    height: 325px;
+    width: 400px;
+    bottom: 0;
+    position: absolute;
+    left: 33%;
+    z-index: -2000;
+    justify-content: center;
+    border: 2px solid #000000;
+    border-bottom: 0;
+}
+
+.contestant {
+    position: relative;
+}
+
+#originalContestant {
+    background: url("../images/contestantImages/pokerface.png") no-repeat center center;
+    background-size: 100px;
+    height: 128px;
+    top: -128px;
+}
+
+#briefing {
+    font-size: 30px;
+    color: #ffd800;
+}
